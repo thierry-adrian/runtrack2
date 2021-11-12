@@ -14,9 +14,16 @@
 
 <?php
 
-// <Liste des nombres compris entre 0 et 1337.
+/*
+Liste des nombres compris entre 0 et 1337.
+Dans cette version, dans la boucle for, on utilise $i = 0, plutôt que $i = 1 
+pour faire commencer la liste à 0, mais on rajoute une condition if
+pour supprimer le 0 de la liste.
+*/
 
-for ($i = 1; $i < 1337; $i++) {
+for ($i = 0; $i < 1337; $i++) {
+
+if ($i > 0) {
     
 if ($i == 42) {
     echo "<b><u>".$i."</u></b></br>";
@@ -24,19 +31,6 @@ if ($i == 42) {
     echo $i;
     echo '<br/>';
 }
-
 }
-
-for ($i = 0; $i > 0; $i = $i++){
-
-            // for ($i = 0; $i < 1337; $i++) {
-
-if ($i > 0 && )
-
-if ($i == 42){
-    echo "<b><u>".$i."</u></b></br>";
-}
-}   echo $i;
-    echo 'br/';
 }
 ?>
